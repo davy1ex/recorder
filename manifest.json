@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Trillian",
+    "description": "bla-bla-bla...",
+    "version": "1",    
+    "icons": {"128": "icon.png"},
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permisssions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["script.js"]
+        }
+    ]
+}
